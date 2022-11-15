@@ -49,7 +49,7 @@ pipeline {
     stage('git checkout'){
     steps {
     container('jnlp'){
-    git credentialsId:'github' , url:'https://github.com/muskan14-dev/Jenkinsfile/new/'
+    git credentialsId:'jenkins-gitlab' , url:'https://github.com/muskan14-dev/Jenkinsfile/new/'
     sh "hostname"
     }
     }
